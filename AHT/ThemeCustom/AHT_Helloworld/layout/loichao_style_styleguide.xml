@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="AHT_Helloworld::js/hello.js"/>
+    </head>
+    <body>
+       <referenceBlock name="aht.helloworld.styleguide">
+            <referenceContainer name="content">
+                <container name="style.content" htmlTag="div" htmlClass="style-content">
+                    <container name="left.content" htmlTag="div" htmlClass="left-content" before="-">
+                        <block class="Magento\Framework\View\Element\Template" name="left.content.block" template="AHT_Helloworld::Content/left.phtml"  /> 
+                    </container>
+                    <container name="right.content" htmlTag="div" htmlClass="right-content" >
+                        <block class="Magento\Framework\View\Element\Template" name="right.content.block" template="AHT_Helloworld::Content/right.phtml" />
+                    </container>
+                </container>
+            </referenceContainer>  
+        </referenceBlock>
+    </body>
+</page>
